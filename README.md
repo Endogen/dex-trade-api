@@ -14,11 +14,15 @@ A comprehensive Python client for interacting with the Dex-Trade cryptocurrency 
 
 ## Installation
 
-### Prerequisites
-- Python 3.11 or higher
-- Poetry (recommended for dependency management)
+### Using pip
 
-### Using Poetry (Recommended)
+The simplest way to install the package is via pip:
+
+```bash
+pip install dex-trade-api
+```
+
+### Using Poetry (For Development)
 
 1. Clone the repository:
 ```bash
@@ -31,10 +35,12 @@ cd dex-trade-api
 poetry install
 ```
 
-### Using pip
+### From Source
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/yourusername/dex-trade-api.git
+cd dex-trade-api
+pip install .
 ```
 
 ## Configuration
