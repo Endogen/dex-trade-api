@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Python client for the Dex-Trade cryptocurrency exchange API"
 authors = ["endogen <endogen@xian.org>"]
 readme = "README.md"
+packages = [{include = "dextrade"}]
 license = "MIT"
 homepage = "https://github.com/endogen/dex-trade-api"
 repository = "https://github.com/endogen/dex-trade-api"
@@ -25,21 +26,6 @@ requests = "^2.32.3"
 python-dotenv = "^1.0.1"
 websocket-client = "^1.7.0"
 
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.0.0"
-pytest-cov = "^4.1.0"
-black = "^24.1.1"
-isort = "^5.13.2"
-flake8 = "^7.0.0"
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.black]
-line-length = 88
-target-version = ["py311"]
-
-[tool.isort]
-profile = "black"
-multi_line_output = 3
