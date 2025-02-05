@@ -58,7 +58,7 @@ DEXTRADE_SECRET=your_secret_here
 
 Then initialize the client:
 ```python
-from dextrade import DexTradeAPI
+from dextrade.api import DexTradeAPI
 
 # Automatically loads from .env
 client = DexTradeAPI.from_env()
